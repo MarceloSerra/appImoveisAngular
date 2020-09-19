@@ -1,0 +1,9 @@
+h1{
+  color: purple;
+}
+
+img{
+  margin: 5% 0;
+  max-width: 50%;
+  display: block;
+}

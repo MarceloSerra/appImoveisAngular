@@ -1,0 +1,11 @@
+<h1>{{title}}</h1>
+
+<p>{{dados}}</p>
+
+<input type="text" [(ngModel)]="dados">
+
+<button (click)="run()">Click Me</button>
+
+<input type="checkbox" [(ngModel)]="showImage">
+
+<img *ngIf="showImage" [src]="imgUrl">

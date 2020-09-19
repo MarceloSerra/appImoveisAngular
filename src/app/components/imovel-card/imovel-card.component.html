@@ -1,0 +1,15 @@
+<div>
+  <mat-card>
+    <img [src]="image">
+
+    <div class="info">
+      <span>{{address}}</span>
+      <span class="price">{{price | currency:'BRL':'symbol':"4.0-2"}}</span>
+    </div>
+
+    <div class="info">
+      <span>{{owner}}</span>
+      <span>{{type}}</span>
+    </div>
+  </mat-card>
+</div>
