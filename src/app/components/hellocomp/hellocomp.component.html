@@ -2,10 +2,12 @@
 
 <p>{{dados}}</p>
 
-<input type="text" [(ngModel)]="dados">
-
-<button (click)="run()">Click Me</button>
-
-<input type="checkbox" [(ngModel)]="showImage">
-
+<mat-form-field>
+  <mat-label>Digite Aqui</mat-label>
+  <input matInput type="text" [(ngModel)]="dados">
+</mat-form-field>
+<br>
+<button mat-raised-button color="primary" (click)="run()">Click Me</button>
+<br><br>
+<mat-checkbox [(ngModel)]="showImage"></mat-checkbox>
 <img *ngIf="showImage" [src]="imgUrl">

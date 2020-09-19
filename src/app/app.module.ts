@@ -20,6 +20,8 @@ import localePT from '@angular/common/locales/pt'
 import { HttpClientModule } from '@angular/common/http';
 import { ImovelPageComponent } from './components/imovel-page/imovel-page.component';
 import { HellocompComponent } from './components/hellocomp/hellocomp.component';
+import {MatInputModule} from '@angular/material/input';
+import {MatCheckboxModule} from '@angular/material/checkbox';
 
 
 registerLocaleData(localePT, 'pt-br');
@@ -44,7 +46,9 @@ registerLocaleData(localePT, 'pt-br');
     MatListModule,
     FormsModule,
     MatCardModule,
-    HttpClientModule
+    HttpClientModule,
+    MatInputModule,
+    MatCheckboxModule
   ],
   providers: [
     {
